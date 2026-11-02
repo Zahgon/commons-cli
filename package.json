@@ -1,0 +1,32 @@
+{
+  "name": "commons-cli",
+  "version": "1.11.0",
+  "description": "Apache Commons CLI for JavaScript: define command line options, parse arguments and print help.",
+  "license": "Apache-2.0",
+  "homepage": "https://commons.apache.org/proper/commons-cli/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apache/commons-cli.git"
+  },
+  "type": "module",
+  "exports": {
+    ".": "./lib/index.js",
+    "./help": "./lib/help/index.js"
+  },
+  "bin": {
+    "commons-cli": "bin/commons-cli.js"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "LICENSE.txt",
+    "NOTICE.txt"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "check": "node scripts/check.js",
+    "test": "node --test"
+  }
+}
